@@ -1,0 +1,84 @@
+.officer-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.officer-welcome-banner {
+  background: linear-gradient(135deg, #004d47 0%, #006a61 100%);
+  color: #ffffff;
+  padding: 32px;
+  border-radius: var(--radius-xl);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .officer-welcome-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.officer-dept-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ccfbf1;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  margin-bottom: 8px;
+}
+
+.officer-title {
+  font-size: 1.75rem;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.officer-sub {
+  font-size: 0.95rem;
+  color: #ccfbf1;
+  max-width: 720px;
+}
+
+.officer-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-md);
+}
+
+@media (max-width: 1024px) {
+  .officer-metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .officer-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.officer-metric-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-structural);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.officer-app-id {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-primary-light);
+}

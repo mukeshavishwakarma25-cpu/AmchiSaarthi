@@ -1,0 +1,72 @@
+export const mockApprovals = [
+  {
+    id: 'APP-TYPE-01',
+    code: 'TRADE_LIC',
+    name: 'Municipal Trade License & Renewal',
+    departmentId: 'DEP-02',
+    departmentName: 'Urban Development & Municipal Corporation',
+    phase: 'Phase 2: Pre-Operation Clearances',
+    type: 'Mandatory',
+    processingDays: 7,
+    fee: '₹ 4,500',
+    whyApplies: 'Mandatory for all physical commercial, wholesale, retail, and manufacturing enterprises in municipal jurisdiction.',
+    requiredDocuments: ['Identity Proof (Aadhaar/PAN)', 'Premises Ownership / Rental Agreement', 'Property Tax Receipt', 'Site Floor Plan'],
+    description: 'Statutory certificate permitting legitimate commercial operations within municipal limits under the Maharashtra Municipal Corporations Act.'
+  },
+  {
+    id: 'APP-TYPE-02',
+    code: 'FACTORY_PLAN',
+    name: 'Factory Building Plan & Safety Approval',
+    departmentId: 'DEP-01',
+    departmentName: 'Industry, Energy & Labour Department',
+    phase: 'Phase 1: Pre-Establishment Clearances',
+    type: 'Mandatory',
+    processingDays: 15,
+    fee: '₹ 8,000',
+    whyApplies: 'Required when employing 10+ workers with power in manufacturing operations under Factories Act 1948.',
+    requiredDocuments: ['Machinery Layout Plan', 'Building Structural Stability Certificate', 'Site Elevation Plan', 'Process Flowchart'],
+    description: 'Validation of factory layout, worker safety exits, ventilation, and structural load compliance prior to construction.'
+  },
+  {
+    id: 'APP-TYPE-03',
+    code: 'MPCB_CTE',
+    name: 'Consent to Establish (CTE) - Orange Category',
+    departmentId: 'DEP-03',
+    departmentName: 'Maharashtra Pollution Control Board (MPCB)',
+    phase: 'Phase 1: Pre-Establishment Clearances',
+    type: 'Mandatory',
+    processingDays: 21,
+    fee: '₹ 15,000',
+    whyApplies: 'Applicable for clean-tech manufacturing units emitting air/effluent streams classified under Orange category.',
+    requiredDocuments: ['Project Report (DPR)', 'Water Balance Chart', 'Effluent Treatment Plant (ETP) Scheme', 'Land Allotment Order'],
+    description: 'Environmental clearance under Water and Air Pollution Prevention Acts.'
+  },
+  {
+    id: 'APP-TYPE-04',
+    code: 'FIRE_NOC',
+    name: 'Fire Safety Clearance / NOC',
+    departmentId: 'DEP-04',
+    departmentName: 'Fire & Emergency Services Directorate',
+    phase: 'Phase 2: Pre-Operation Clearances',
+    type: 'Mandatory',
+    processingDays: 10,
+    fee: '₹ 6,000',
+    whyApplies: 'Mandatory for industrial structures above 500 sq meters or storing combustible materials.',
+    requiredDocuments: ['Architectural Plan with Hydrant layout', 'Equipment Inspection Report', 'Emergency Evacuation Chart'],
+    description: 'Certification of fire alarm systems, smoke detectors, hydrants, and evacuation stairwells.'
+  },
+  {
+    id: 'APP-TYPE-05',
+    code: 'WATER_CONN',
+    name: 'Industrial Water Utility Connection',
+    departmentId: 'DEP-02',
+    departmentName: 'Urban Development & Municipal Corporation',
+    phase: 'Phase 2: Pre-Operation Clearances',
+    type: 'Optional',
+    processingDays: 5,
+    fee: '₹ 3,200',
+    whyApplies: 'Applicable for enterprises requesting commercial high-capacity water intake lines.',
+    requiredDocuments: ['Plumbing Schematic', 'Sanctioned Building Plan', 'Latest Property Tax Bill'],
+    description: 'Authorization for industrial bulk water connection tapping municipal distribution lines.'
+  }
+];

@@ -1,0 +1,90 @@
+.issue-detection-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.issue-banner {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+}
+
+.banner-warning {
+  background-color: #fffbeb;
+  border-color: #fef08a;
+}
+
+.banner-warning .banner-icon {
+  color: #d97706;
+}
+
+.banner-warning .banner-title {
+  color: #92400e;
+}
+
+.banner-warning .banner-tag {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.banner-critical {
+  background-color: #fef2f2;
+  border-color: #fecaca;
+}
+
+.banner-critical .banner-icon {
+  color: #dc2626;
+}
+
+.banner-critical .banner-title {
+  color: #991b1b;
+}
+
+.banner-critical .banner-tag {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.banner-icon-col {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 2px;
+}
+
+.banner-icon {
+  font-size: 24px;
+}
+
+.banner-content {
+  flex: 1;
+}
+
+.banner-title-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: 4px;
+}
+
+.banner-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.banner-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.banner-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}

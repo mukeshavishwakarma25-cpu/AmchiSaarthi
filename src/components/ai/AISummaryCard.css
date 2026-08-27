@@ -1,0 +1,104 @@
+.ai-summary-card {
+  background: linear-gradient(180deg, #f0f7ff 0%, #ffffff 100%);
+  border: 1px solid #bfdbfe;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  box-shadow: 0 2px 4px rgba(0, 35, 111, 0.04);
+}
+
+.ai-summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 1px solid #dbeafe;
+}
+
+.ai-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.ai-sparkle-icon {
+  font-size: 16px;
+  color: #93c5fd;
+}
+
+.ai-confidence {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.ai-confidence strong {
+  color: var(--color-primary);
+}
+
+.ai-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+@media (max-width: 900px) {
+  .ai-summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .ai-summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ai-summary-field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.field-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.field-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.field-value.mono {
+  font-family: var(--font-mono);
+  color: var(--color-primary-light);
+}
+
+.ai-disclaimer-strip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #f8fafc;
+  padding: 8px 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid #e2e8f0;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.disclaimer-icon {
+  font-size: 16px;
+  color: var(--text-muted);
+}

@@ -1,0 +1,142 @@
+.document-vault-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.vault-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vault-expiry-strip {
+  background-color: #fffbeb;
+  border: 1px solid #fde68a;
+  border-left: 4px solid #d97706;
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #92400e;
+  font-size: 0.88rem;
+}
+
+.vault-expiry-strip .material-symbols-outlined {
+  color: #d97706;
+  font-size: 24px;
+}
+
+.vault-docs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.vault-doc-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.doc-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.doc-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background-color: #fee2e2;
+  color: #dc2626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doc-icon-wrap .material-symbols-outlined {
+  font-size: 24px;
+}
+
+.doc-title {
+  font-size: 1rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 2px;
+}
+
+.doc-cat {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.doc-card-meta {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg-app);
+  padding: 10px;
+  border-radius: var(--radius-md);
+  font-size: 0.75rem;
+}
+
+.meta-lbl {
+  display: block;
+  color: var(--text-muted);
+}
+
+.meta-val {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.doc-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 10px;
+}
+
+.preview-mock-canvas {
+  background-color: var(--bg-app);
+  border: 1px solid var(--border-structural);
+  border-radius: var(--radius-lg);
+  padding: 40px 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.canvas-icon {
+  font-size: 48px;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
+
+.preview-mock-canvas h3 {
+  font-size: 1.15rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 4px;
+}
+
+.preview-mock-canvas p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.canvas-meta {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.preview-modal-footer-btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
